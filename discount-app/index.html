@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Porcentajes y Descuentos | Curso prácito de Javascript en Platzi</title>
+</head>
+<body>
+    <section>
+        <div class="left-side">
+            <img src="./discount-app.png" alt="">
+        </div>
+        <div class="right-side">
+            <h1>Porcentaje y Descuentos</h1>
+            <h4>Calcula el precio a pagar de tus productos. Prueba con: CODE10, CODE20, CODE50.</h4>
+            <p>Created by: <span>Eduardo Romero</span></p>
+            <p>Last Edited: <span>Jan 04, 2021</span></p>
+
+            <form action="">
+                <label for="InputPrice">Precio del producto $</label>
+                <input id="InputPrice" type="number" placeholder="$"/>
+
+                <label for="InputCoupon">¿Tienes un código de cupón?</label>
+                <input id="InputCoupon" type="numbers"/>
+                <button type="button" onclick="onClickButtonPriceDiscount()">Calcular precio a pagar</button>
+            </form>
+            <div class="resultSection">
+                <p id="Savings">Ahorro:</p>
+                <p id="ResultP">PRECIO FINAL:</p>
+            </div>
+        </div>    
+    </section>
+    <script src="descuentos.js"></script>
+</html> 
